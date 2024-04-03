@@ -14,7 +14,7 @@ Find some preview screenshots here:
 
 ### Assets
 
-- [Fontawesome](https://fontawesome.com/) was used for the GitHub icon.
+- [Fontawesome](https://fontawesome.com/) was used for the icons.
 - [Google Fonts](https://fonts.google.com/) was used for the fonts.
 
 ### Libraries and APIs 
