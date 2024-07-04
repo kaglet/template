@@ -1,8 +1,12 @@
 {
-  "name": "template",
+  "name": "@kago_m/<package-name>",
   "version": "1.0.0",
   "description": "",
-  "private": true,
+  "main": "./src/index.js",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --config webpack.dev.js",
@@ -11,7 +15,11 @@
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
-  "author": "",
+  "author": "kago_m",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaglet/<repo-name>"
+  },
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.10.0",
@@ -27,3 +35,4 @@
     "webpack-merge": "^5.10.0"
   }
 }
+
