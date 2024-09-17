@@ -7,3 +7,7 @@ test('Single character', () => {
 test('Many characters', () => {
     expect(capitalize('foot')).toBe('Foot');
 });
+
+test('Empty String', () => {
+    expect(capitalize('')).toBe('');
+});
