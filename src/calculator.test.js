@@ -28,4 +28,6 @@ test('Divide', () =>
     expect(calculator.divide(2, 15)).toBeCloseTo(2 / 15)
 );
 
-
+test('Divide by Zero', () =>
+    expect(calculator.divide(3, 0)).toBeNaN()
+);
