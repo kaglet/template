@@ -11,13 +11,13 @@ module.exports = {
 	plugins: [
 		new MiniCssExtractPlugin(),
 		new HTMLWebpackPlugin({
-			template: "./src/index.html",
-			inject: "body",
+			template: './src/index.html',
+			inject: 'body',
 		}),
 	],
 	output: {
-		filename: "[name].bundle.js",
-		path: path.resolve(__dirname, "dist"),
+		filename: '[name].bundle.js',
+		path: path.resolve(process.cwd(), 'dist'),
 		clean: true,
 	},
 	module: {
@@ -54,9 +54,9 @@ module.exports = {
 	},
 	resolve: {
 		alias: {
-			Fonts: path.resolve(__dirname, "src/assets/fonts/"),
-			Images: path.resolve(__dirname, "src/assets/images/"),
-			Svg: path.resolve(__dirname, "src/assets/svgs/"),
+			Fonts: path.resolve(process.cwd(), 'src/assets/fonts/'),
+			Images: path.resolve(process.cwd(), 'src/assets/images/'),
+			Svg: path.resolve(process.cwd(), 'src/assets/svgs/'),
 		},
 	},
 };
