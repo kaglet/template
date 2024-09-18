@@ -6,10 +6,6 @@ module.exports =  merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
-    client: {
-      webSocketTransport: require.resolve('./CustomClient'),
-    },
-    webSocketServer: require.resolve('./CustomServer'),
     hot: true,
   },
 });
