@@ -4,5 +4,5 @@ function component() {
   return element;
 }
 
-console.log("hello")
+console.log("hello");
 module.exports = component;
