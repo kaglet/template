@@ -24,6 +24,7 @@ function caesarCipher(string, shift) {
         let asciiVal = arr[i].charCodeAt(0);
         let isLetter = (asciiVal <= 122 && asciiVal >= 97) || (asciiVal <= 90 && asciiVal >= 65);
         if (isLetter) {
+            // perform shift
             let isUppercase = asciiVal <= 90 && asciiVal >= 65;
             if (isUppercase) {
                 newStr += shiftByCase(asciiVal, shift, 65, 90);

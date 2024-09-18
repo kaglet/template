@@ -1,3 +1,4 @@
+const analyzeArray = require("./analyze_array");
 const caesarCipher = require("./caesar_cipher");
 
 function component() {
@@ -6,5 +7,5 @@ function component() {
   return element;
 }
 
-caesarCipher("A", 2);
+analyzeArray([3, "hi" , 2]);
 module.exports = component;
