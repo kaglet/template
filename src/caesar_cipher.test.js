@@ -1,26 +1,27 @@
 const caesarCipher = require('./caesar_cipher');
 
 test('Single character', () => 
-    expect('b', 2).toBe('d')
+    expect(caesarCipher('b', 2)).toBe('d')
 );
 
 test('Many characters', () => 
-    expect('abc', 3).toBe('def')
+    expect(caesarCipher('abc', 3)).toBe('def')
 );
 
 test('Uppercase', () => 
-    expect('ABC').toBe('DEF')
+    expect(caesarCipher('ABC', 3)).toBe('DEF')
 );
 
 test('Mixed case', () => 
-    expect('AbC').toBe('DeF')
+    expect(caesarCipher('AbC', 3)).toBe('DeF')
 );
 
 test('Non-letters', () => 
-    expect('.:;+').toBe('.:;+')
+    expect(caesarCipher('.:;+', 3)).toBe('.:;+')
 );
 
 test('Wrap around shift', () => {
-    expect('xyz', 3, 'cba')
+    expect(caesarCipher('xyz', 3)).toBe('abc')
 });
+
 

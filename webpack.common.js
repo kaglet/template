@@ -1,9 +1,9 @@
-import path from 'path';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
-import HTMLWebpackPlugin from 'html-webpack-plugin';
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
-export default {
+module.exports = {
 	mode: 'development',
 	entry: {
 		app: './src/index.js',
